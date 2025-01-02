@@ -11,13 +11,17 @@ export class User {
     _id:string;
 
     @Prop({required:true, unique:true})
-    name:string;
+    firstName:string;
+
+     @Prop({required:false})
+    lastName:string;
 
     @Prop({required:true, unique:true})
     email:string;
 
     @Prop({required:true, unique:true})
     phone:number;
+
 
     @Prop({required:true, unique:true})
     password:string;
